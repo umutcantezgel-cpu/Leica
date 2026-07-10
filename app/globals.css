@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base Reset ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2001A;
+}
+
+/* ── Selection ── */
+::selection {
+  background: #E2001A;
+  color: #fff;
+}
+
+/* ── Nav links hidden on mobile ── */
+@media (max-width: 900px) {
+  .nav-links-desktop {
+    display: none !important;
+  }
+}
