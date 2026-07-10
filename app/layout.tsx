@@ -3,6 +3,7 @@ import { Josefin_Sans, Inter } from "next/font/google";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { PageLoader } from "@/components/ui/PageLoader";
+import { TransitionProvider } from "@/components/ui/TransitionProvider";
 import "./globals.css";
 
 const heading = Josefin_Sans({
@@ -33,10 +34,12 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${heading.variable} ${body.variable}`}>
       <body className="font-body text-leica-dark bg-white min-h-screen">
-        <PageLoader />
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        <TransitionProvider>
+          <PageLoader />
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );
