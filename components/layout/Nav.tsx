@@ -40,7 +40,7 @@ export function Nav() {
             : "bg-transparent"
         )}
       >
-        <div className="max-w-[1320px] mx-auto px-6 md:px-10 flex items-center h-[72px] gap-10">
+        <div className="max-w-[1320px] mx-auto px-6 md:px-10 flex items-center justify-between h-[72px] gap-10">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0" onClick={() => setMenuOpen(false)}>
             <LeicaLogo size={68} />
@@ -73,15 +73,20 @@ export function Nav() {
               aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}
             >
               {menuOpen ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M18 6 6 18M6 6l12 12" />
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <motion.path
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: 1 }}
+                    transition={{ duration: 0.3 }}
+                    d="M18 6L6 18M6 6l12 12"
+                  />
                 </svg>
               ) : (
-                <>
-                  <span className={cn("block w-5 h-[1.5px] transition-colors", showSolid ? "bg-leica-dark" : "bg-white")} />
-                  <span className={cn("block w-5 h-[1.5px]", showSolid ? "bg-leica-dark" : "bg-white")} />
-                  <span className={cn("block w-[13px] h-[1.5px]", showSolid ? "bg-leica-dark" : "bg-white")} />
-                </>
+                <div className="flex flex-col gap-[5px] items-end w-[22px]">
+                  <motion.span layoutId="line1" className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
+                  <motion.span layoutId="line2" className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
+                  <motion.span layoutId="line3" className={cn("block h-[1px] transition-colors w-[14px]", showSolid ? "bg-leica-dark" : "bg-white")} />
+                </div>
               )}
             </button>
           </div>

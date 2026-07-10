@@ -95,6 +95,7 @@ export interface ExperienceItem {
   subtitle: string;
   description: string;
   href: string;
+  imageUrl?: string;
 }
 
 export interface FooterColumn {

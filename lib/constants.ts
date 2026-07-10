@@ -103,12 +103,12 @@ export const HOME_STATS: Stat[] = [
 
 // ── Exhibitions ──
 export const EXHIBITIONS: Exhibition[] = [
-  { id: "1", title: "She Shoots Leica: Different Women. One Love.", tag: "Laufend", dateRange: "10. März – 03. Mai 2026", location: "Café Leitz", category: "Gruppenausstellung" },
-  { id: "2", title: "Ragnar Axelsson: Where the World Is Melting", tag: "Laufend", dateRange: "23. Jan. – 29. Mai 2026", location: "Ernst Leitz Museum", category: "Reportagefotografie" },
-  { id: "3", title: "Leica – Witness to a Century", tag: "Laufend", dateRange: "29. Juni 2025 – 28. Juni 2026", location: "Ernst Leitz Museum", category: "Dauerausstellung" },
-  { id: "4", title: "Leica Experience Days 2026", tag: "Kommend", dateRange: "08. – 10. Mai 2026", location: "Leica Welt", category: "Event" },
-  { id: "5", title: "Sebastião Salgado: Genesis", tag: "Archiv", dateRange: "2024", location: "Ernst Leitz Museum", category: "Dokumentarfotografie" },
-  { id: "6", title: "Magnum Photos: 75 Jahre", tag: "Archiv", dateRange: "2024", location: "Ernst Leitz Museum", category: "Fotojournalismus" },
+  { id: "1", title: "She Shoots Leica: Different Women. One Love.", tag: "Laufend", dateRange: "10. März – 03. Mai 2026", location: "Café Leitz", category: "Gruppenausstellung", imageUrl: "/images/leica_she_shoots_leica.jpg" },
+  { id: "2", title: "Ragnar Axelsson: Where the World Is Melting", tag: "Laufend", dateRange: "23. Jan. – 29. Mai 2026", location: "Ernst Leitz Museum", category: "Reportagefotografie", imageUrl: "/images/leica_ragnar_axelsson.jpg" },
+  { id: "3", title: "Leica – Witness to a Century", tag: "Laufend", dateRange: "29. Juni 2025 – 28. Juni 2026", location: "Ernst Leitz Museum", category: "Dauerausstellung", imageUrl: "/images/leica_witness_century.jpg" },
+  { id: "4", title: "Leica Experience Days 2026", tag: "Kommend", dateRange: "08. – 10. Mai 2026", location: "Leica Welt", category: "Event", imageUrl: "/images/leica_experience_days.jpg" },
+  { id: "5", title: "Sebastião Salgado: Genesis", tag: "Archiv", dateRange: "2024", location: "Ernst Leitz Museum", category: "Dokumentarfotografie", imageUrl: "/images/leica_hof_salgado.jpg" },
+  { id: "6", title: "Magnum Photos: 75 Jahre", tag: "Archiv", dateRange: "2024", location: "Ernst Leitz Museum", category: "Fotojournalismus", imageUrl: "/images/leica_magnum_75.jpg" },
 ];
 
 // ── Events ──
@@ -143,12 +143,12 @@ export const TOURS: Tour[] = [
 
 // ── Experiences ──
 export const EXPERIENCES: ExperienceItem[] = [
-  { title: "Ernst Leitz Museum", subtitle: "Museum", description: "Fotografie Sehen. Gestalten. Erleben.", href: "/ernst-leitz-museum" },
-  { title: "Leica Headquarter", subtitle: "Manufaktur", description: "Handwerk und Präzision hautnah erleben.", href: "/leica-headquarter" },
-  { title: "Touren", subtitle: "Geführt", description: "Mehr Insights bei unseren geführten Touren.", href: "/erlebnisse/touren" },
-  { title: "Smartphone Workshop", subtitle: "Workshop", description: "Vom Schnappschuss zum perfekten Bild.", href: "/erlebnisse/smartphone-workshop" },
-  { title: "Gutscheine & Pakete", subtitle: "Geschenk", description: "Perfekte Geschenke für Fotografiebegeisterte.", href: "/erlebnisse/gutscheine" },
-  { title: "Erlebnispakete", subtitle: "MAX · ELSIE · OSKAR", description: "Komplett-Erlebnisse für einen oder mehrere Tage.", href: "/erlebnisse/erlebnispakete" },
+  { title: "Ernst Leitz Museum", subtitle: "Museum", description: "Fotografie Sehen. Gestalten. Erleben.", href: "/ernst-leitz-museum", imageUrl: "/images/leica_museum_exhibition.jpg" },
+  { title: "Leica Headquarter", subtitle: "Manufaktur", description: "Handwerk und Präzision hautnah erleben.", href: "/leica-headquarter", imageUrl: "/images/leica_manufaktur.jpg" },
+  { title: "Touren", subtitle: "Geführt", description: "Mehr Insights bei unseren geführten Touren.", href: "/erlebnisse/touren", imageUrl: "/images/leica_touren.jpg" },
+  { title: "Smartphone Workshop", subtitle: "Workshop", description: "Vom Schnappschuss zum perfekten Bild.", href: "/erlebnisse/smartphone-workshop", imageUrl: "/images/leica_smartphone_workshop.jpg" },
+  { title: "Gutscheine & Pakete", subtitle: "Geschenk", description: "Perfekte Geschenke für Fotografiebegeisterte.", href: "/erlebnisse/gutscheine", imageUrl: "/images/leica_gutscheine.jpg" },
+  { title: "Erlebnispakete", subtitle: "MAX · ELSIE · OSKAR", description: "Komplett-Erlebnisse für einen oder mehrere Tage.", href: "/erlebnisse/erlebnispakete", imageUrl: "/images/leica_erlebnispakete.jpg" },
 ];
 
 // ── FAQ ──

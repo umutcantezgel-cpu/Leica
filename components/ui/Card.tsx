@@ -23,7 +23,7 @@ export function Card({ title, subtitle, tag, href, aspect = "3/2", imageUrl }: C
     >
       <div className="overflow-hidden relative">
         <motion.div whileHover={{ scale: 1.04 }} transition={{ duration: 0.5 }}>
-          <ImgPlaceholder aspect={aspect} label={imageUrl || title} />
+          <ImgPlaceholder aspect={aspect} label={imageUrl || title} src={imageUrl} />
         </motion.div>
         {tag && (
           <div className="absolute top-4 left-4 bg-leica-red text-white text-[10px] tracking-[0.15em] uppercase px-2.5 py-1 font-heading font-semibold">
