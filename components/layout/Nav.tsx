@@ -83,9 +83,9 @@ export function Nav() {
                 </svg>
               ) : (
                 <div className="flex flex-col gap-[5px] items-end w-[22px]">
-                  <motion.span layoutId="line1" className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
-                  <motion.span layoutId="line2" className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
-                  <motion.span layoutId="line3" className={cn("block h-[1px] transition-colors w-[14px]", showSolid ? "bg-leica-dark" : "bg-white")} />
+                  <motion.span className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
+                  <motion.span className={cn("block h-[1px] transition-colors w-full", showSolid ? "bg-leica-dark" : "bg-white")} />
+                  <motion.span className={cn("block h-[1px] transition-colors w-[14px]", showSolid ? "bg-leica-dark" : "bg-white")} />
                 </div>
               )}
             </button>
